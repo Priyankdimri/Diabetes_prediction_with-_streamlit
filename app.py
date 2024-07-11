@@ -6,9 +6,9 @@ import pickle
 pickel_open=open("KNN.pkl","rb")
 KNN=pickle.load(pickel_open)
 
-# def predict_note(gender,age,hypertension,heart_disease,bmi,HbA1c_level,blood_glucose_level):
-#     prediction=KNN.predict([[gender,age,hypertension,heart_disease,bmi,HbA1c_level,blood_glucose_level]])
-#     return prediction
+def predict_note(gender,age,hypertension,heart_disease,bmi,HbA1c_level,blood_glucose_level):
+    prediction=KNN.predict([[gender,age,hypertension,heart_disease,bmi,HbA1c_level,blood_glucose_level]])
+    return prediction
 
 def main():
     st.title("Welcome To Diabities prediction ")
